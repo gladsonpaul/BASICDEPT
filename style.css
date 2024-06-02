@@ -1,0 +1,52 @@
+@font-face {
+    font-family: Grotesk-R;
+    src: url(./assets/font/SctoGroteskA-Regular.woff2);
+}
+
+@font-face {
+    font-family: Grotesk-M;
+    src: url(./assets/font/SctoGroteskA-Medium.woff2);
+}
+
+@font-face {
+    font-family: Grotesk-B;
+    src: url(./assets/font/SctoGroteskA-Bold.woff2);
+}
+
+
+:root {
+    --GroteskR: Grotesk-R;
+    --GroteskM: Grotesk-M;
+    --GroteskB: Grotesk-B;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html.lenis,
+html.lenis body {
+    height: auto;
+}
+
+.lenis.lenis-smooth {
+    scroll-behavior: auto !important;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+    overscroll-behavior: contain;
+}
+
+.lenis.lenis-stopped {
+    overflow: hidden;
+}
+
+.lenis.lenis-smooth iframe {
+    pointer-events: none;
+}
+
+body {
+    height: 400vh !important;
+}
